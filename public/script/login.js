@@ -1,8 +1,4 @@
 
-// get details
-// post details to post request
-// 
-
 const loginForm = document.querySelector('#login-form');
 
 loginForm.addEventListener('submit', (e) => {
@@ -16,7 +12,7 @@ loginForm.addEventListener('submit', (e) => {
         username,
         password
     }
-    const url = 'http://localhost:3000/users/login';
+    const url = 'https://course-rep.herokuapp.com/users/login';
 
     validateUser(url, data)
     e.preventDefault()
@@ -37,8 +33,7 @@ const validateUser = async (url, body) => {
         body: JSON.stringify(body)
     });
 
-    // const data = await res.json()
-    // console.log(res)
+    console.log(res)
 
     console.log(res)
     if (res.status !== 200) {

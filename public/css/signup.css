@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.innerheader {
+  background: rgb(36, 120, 189);
+  padding: 1rem 0;
+  display: flex;
+}
+
+.innerheader h3 a {
+  padding-left: 17px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  overflow: hidden;
+}
+
+.innerheader .clearBtn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin-right: 25px;
+  padding: 10px;
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.container {
+  /* border: 1px solid black; */
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+#form p {
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#formInner {
+  padding: 2rem 1rem;
+  margin: auto;
+  width: 70%;
+}
+
+#formContent {
+  padding-top: 30px;
+}
+
+#formlabel {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+}
+
+.userInput {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgb(36, 120, 189);
+  margin: 0.4rem 0;
+}
+
+.regBtn {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+#loginLnk {
+  padding-top: 10px;
+}
+
+#loginLnk a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: #333;
+  transition: 10ms  10ms color ease-out;
+}
+
+#loginLnk a:hover {
+  color: rgb(36, 120, 189);
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  background: #333;
+  color: #fff;
+}

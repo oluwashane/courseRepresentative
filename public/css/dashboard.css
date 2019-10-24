@@ -31,7 +31,8 @@ header {
 }
 
 .logout {
-    margin-left: 10px; 
+    margin-left: 10px;
+    cursor: pointer; 
 }
 
 #header_options a{

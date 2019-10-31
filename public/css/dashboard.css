@@ -52,13 +52,13 @@ header {
 
 #showcase::before {
     content: '';
-    background: url("../images/architecture-buildings-city.jpg");
+    background: url("../images/userdash.jpeg");
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -101,6 +101,7 @@ header {
     text-transform: capitalize;
     letter-spacing: 3px;
     margin-top: 30px;
+    margin-bottom: 40px;
     color: rgb(109, 109, 109);
 }
 
@@ -156,4 +157,11 @@ footer {
     font-size: 13px;
     letter-spacing: 3px;
     color: rgb(109, 109, 109);
-  }
+}
+
+::placeholder {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7em;
+}

@@ -13,7 +13,6 @@ loginForm.addEventListener('submit', (e) => {
         password
     }
     const url = 'https://course-rep.herokuapp.com/users/login';
-
     validateUser(url, data)
     e.preventDefault()
 })
@@ -44,7 +43,7 @@ const validateUser = async (url, body) => {
     storeToken(data)
     // Recall to use location.replace after working
     
-    window.location.replace = '/public/pages/dashboard.html'
+    window.location.replace('../pages/dashboard.html')
 
 }
 

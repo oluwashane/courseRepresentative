@@ -20,8 +20,7 @@ modalBtn.addEventListener('click', close);
 function loadData() {
     // const jsonData = await fetch('http://localhost:3000/users');
     // const data = await jsonData.json();
-    // // fetch('https://course-rep.herokuapp.com/users')
-    fetch('http://localhost:3000/users')
+    fetch('https://course-rep.herokuapp.com/users')
     .then(n => n.json())
     .then((data) => {
         const ui_Structure = document.querySelector('#profile');
@@ -69,7 +68,7 @@ async function loadClientData(_id) {
     // clientProfile.innerHTML = "<h1>Hello World</h1>"
     console.log(_id)
     
-    const clientData = await fetch(`http://localhost:3000/users/${_id}`);
+    const clientData = await fetch(`https://course-rep.herokuapp.com/users/${_id}`);
     const rawData = await clientData.json();
     console.log(rawData);
     const userDetailsInModal = `

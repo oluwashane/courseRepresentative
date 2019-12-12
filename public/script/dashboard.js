@@ -84,7 +84,7 @@ async function loadClientData(_id) {
                 </li>
                 <li>
                     <span>Department:</span>
-                    computer Science
+                    ${rawData.department}
                 </li>
                 <li>
                     <span>Level:</span>

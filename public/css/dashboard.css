@@ -107,14 +107,16 @@ header {
 
 #profile {
     margin-bottom: 50px;
-}
-
-.profile-structure {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 45px;
     display: grid;
     width: 80%;
     margin: auto;
+    
+}
+
+.profile-structure {
+    
 }
 
 #user_profile {
@@ -122,10 +124,17 @@ header {
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 
+#user_profile .profile-image {
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+}
+
 #user_profile img {
-    height: 250px;
+    /* height: 250px;
+    width: 250px; */
+    border-radius: 50%;
     width: 100%;
-    
 }
 
 #user_profile  p {
@@ -133,10 +142,10 @@ header {
     color: rgb(109, 109, 109);
 }
 
-#btn_father {
+#user_profile .btn_father {
     margin: auto;
     width: 50%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 #user_profile button {
@@ -165,3 +174,84 @@ footer {
     letter-spacing: 3px;
     font-size: 0.7em;
 }
+
+/* user id holder */
+#hidden {
+    display: none;
+}
+
+
+/* PopUp */
+
+.popUp {
+    background: rgb(236, 236, 236);
+    border: 1px solid gray;
+    height: 70vh;
+    width: 50%;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 70px;
+    position: fixed;
+    display: none;
+} 
+
+#closeStructure {
+    text-align: right;
+}
+
+#closeStructure .close {
+    border: none;
+    margin: 5px 5px 0 0;
+    height: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 7px;
+    color: #fff;
+    text-transform: uppercase;
+    background: red;
+    
+    
+}
+
+/* .clientDetails {
+    border: 1px solid blue;
+} */
+
+#profileImg {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#profileImg .cliImage {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+#clientInfo ul {
+    list-style: none;
+    line-height: 40px;
+    padding-right: 50px;
+    margin: auto;
+}
+
+#clientInfo > ul > li {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+
+#clientInfo > ul > li > span {
+    background: rgb(3, 156, 245);
+    color: #fff;
+    padding: 3px;
+    border-radius: 4px; 
+}
+
+

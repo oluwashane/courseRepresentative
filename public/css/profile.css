@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border: 1px solid red;
+    margin-bottom: 40px;
+}
+
+main {
+    margin: auto;
+    width: 70%;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    /* background: rgb(201, 196, 196); */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+}
+
+main #profileImg {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+
+#profileImg .upload {
+    width: 250px;
+    height: 250px;
+    background-position: center;
+}
+
+main #userDetails {
+    /* justify-content: center;
+    display: flex;
+    flex-direction: column; */
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    line-height: 34px;
+}
+
+#userDetails > div {
+    font-weight: 700;
+    border: 1px solid crimson;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    color: rgb(73, 73, 73);
+    
+}
+
+#userDetails > div > span {
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: rgb(110, 110, 110);
+    text-transform: uppercase;
+}
+
+#editBtn {
+    width: 50%;
+    height: 35px;
+    background: crimson;
+    color: rgb(241, 241, 241);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}

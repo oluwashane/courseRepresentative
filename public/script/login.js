@@ -12,7 +12,8 @@ loginForm.addEventListener('submit', (e) => {
         username,
         password
     }
-    const url = 'https://course-rep.herokuapp.com/users/login';
+
+    const url = "https://course-rep.herokuapp.com/users/login"
     validateUser(url, data)
     e.preventDefault()
 })
@@ -32,16 +33,13 @@ const validateUser = async (url, body) => {
         body: JSON.stringify(body)
     });
 
-    console.log(res)
-
-    console.log(res)
-    if (res.status !== 200) {
-        console.log('Please check your details!!')
+    // show message if error in login
+    if (!res.status === 200) {
+        console.log('Bad Request')
     }
 
     const data = await res.json()
     storeToken(data)
-    // Recall to use location.replace after working
     
     window.location.replace('../pages/dashboard.html')
 
